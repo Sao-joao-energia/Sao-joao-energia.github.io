@@ -1389,134 +1389,109 @@ html {
 
 
 
+
 /* ============================================================
    MULHERES NA TUPÃ
 ============================================================ */
 
-.mulheres-conteudo .section-tag,
-.mulheres-conteudo .section-label,
-.mulheres-conteudo .eyebrow {
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: 0.5px;
-  color: #073b7a;
-  text-transform: uppercase;
-}
-
-/* SUBTÍTULO: SEU TALENTO TAMBÉM FAZ PARTE DESSA HISTÓRIA */
-.mulheres-conteudo h2 {
-  max-width: 620px;
-  margin: 14px 0 22px;
-  color: #073b7a;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-/* AJUSTE PARA CELULARES */
-@media (max-width: 768px) {
-  .mulheres-conteudo .section-tag,
-  .mulheres-conteudo .section-label,
-  .mulheres-conteudo .eyebrow {
-    font-size: 24px;
-  }
-
-  .mulheres-conteudo h2 {
-    font-size: 19px;
-  }
-}
-  
 .mulheres-section {
   padding: 90px 0;
-
   background: #ffffff;
 }
 
-
 .mulheres-grid {
   display: grid;
-
   grid-template-columns:
     minmax(520px, 1.05fr)
     minmax(430px, 0.95fr);
-
   gap: 60px;
-
   align-items: center;
 }
-
 
 .mulheres-conteudo {
   max-width: 650px;
 }
 
-
-.mulheres-conteudo h2 {
-  max-width: 620px;
-
-  margin:
-    10px 0 22px;
-
-  color: #073b7a;
-
+/* TÍTULO PRINCIPAL: MULHERES NA UTE TUPÃ */
+.mulheres-conteudo .section-tag,
+.mulheres-conteudo .section-label,
+.mulheres-conteudo .eyebrow {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   font-size: 36px;
-
-  line-height: 1.25;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #073b7a;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
+/* SUBTÍTULO: SEU TALENTO TAMBÉM FAZ PARTE DESSA HISTÓRIA */
+.mulheres-conteudo h2 {
+  max-width: 620px;
+  margin: 12px 0 24px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #073b7a;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
 
+/* TEXTO DESCRITIVO */
 .mulheres-conteudo .lead {
   max-width: 620px;
-
   margin-bottom: 17px;
-
   color: #505d6d;
-
   font-size: 15px;
-
   line-height: 1.7;
 }
 
-
+/* IMAGEM */
 .mulheres-media {
   width: 100%;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 }
 
-
 .mulheres-imagem-box {
   width: 100%;
-
   max-width: 500px;
-
   padding: 12px;
-
   background: #ffffff;
-
   border-radius: 22px;
-
-  box-shadow:
-    0 18px 45px
-    rgba(7, 59, 122, 0.13);
+  box-shadow: 0 18px 45px rgba(7, 59, 122, 0.13);
 }
-
 
 .mulheres-imagem-box img {
   width: 100%;
-
   height: auto;
-
   display: block;
-
   object-fit: contain;
-
   border-radius: 14px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .mulheres-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .mulheres-conteudo .section-tag,
+  .mulheres-conteudo .section-label,
+  .mulheres-conteudo .eyebrow {
+    font-size: 28px;
+  }
+
+  .mulheres-conteudo h2 {
+    font-size: 21px;
+  }
+
+  .mulheres-section {
+    padding: 55px 0;
+  }
 }
 
 
